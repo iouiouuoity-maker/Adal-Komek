@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adal Komek — Тебя услышат</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="logo" class="logo" />
+        <div><h1>Adal Komek</h1><span>Digital Trust Platform</span></div>
+      </a>
+      <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="ngo.html">НПО</a>
+        <a href="help.html">Помочь</a>
+      </nav>
+      <button class="burger" id="burgerBtn">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Главная</a>
+      <a href="ngo.html">НПО</a>
+      <a href="help.html">Помочь</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-hero pink-bg">
+      <div class="container">
+        <p class="eyebrow">Безопасное пространство</p>
+        <h2>Тебя услышат</h2>
+        <p>Ты можешь быть анонимным, но не останешься один.</p>
+        <a href="#teenChat" class="btn btn-primary">Мне нужно поговорить</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="topics-row">
+          <div class="topic-pill">😔 Мне плохо</div>
+          <div class="topic-pill">🧠 Стресс / тревога</div>
+          <div class="topic-pill">🏫 Проблемы в школе</div>
+          <div class="topic-pill">👨‍👩‍👧 Проблемы в семье</div>
+          <div class="topic-pill">💔 Одиночество</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-bg" id="teenChat">
+      <div class="container two-col">
+        <div class="panel">
+          <h3>Анонимный чат</h3>
+          <div class="chat-box" id="chatBox">
+            <div class="msg ai">Привет. Я рядом. Можешь написать, что тебя беспокоит.</div>
+          </div>
+          <div class="chat-input-row">
+            <input type="text" id="teenInput" placeholder="Напиши своё сообщение..." />
+            <button class="btn btn-primary" id="teenSendBtn">Отправить</button>
+          </div>
+          <div id="crisisBox" class="crisis-box hidden">
+            <h4>Твоя безопасность важна</h4>
+            <p>Если тебе страшно, опасно или ты не хочешь жить — срочно обратись за помощью.</p>
+            <p><strong>📞 111</strong> — линия помощи детям и подросткам</p>
+            <a href="tel:111" class="btn btn-secondary small">Позвонить сейчас</a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Мини-тесты</h3>
+          <div class="mini-tests">
+            <button class="test-btn">Уровень тревожности</button>
+            <button class="test-btn">Есть ли у меня выгорание?</button>
+            <button class="test-btn">Нужна ли мне помощь?</button>
+          </div>
+
+          <h3 class="mt">Истории подростков</h3>
+          <div class="story-card">
+            <h4>«Меня буллили, но я справился»</h4>
+            <p>Анонимная история о том, как подросток нашёл поддержку и смог обратиться за помощью.</p>
+          </div>
+
+          <div class="story-card">
+            <h4>«Как я поговорил с родителями»</h4>
+            <p>История о том, как честный разговор стал первым шагом к изменениям.</p>
+          </div>
+
+          <h3 class="mt">Связь с реальной помощью</h3>
+          <div class="card-actions">
+            <a href="tel:111" class="btn btn-primary small">Позвонить</a>
+            <a href="ngo.html" class="btn btn-secondary small">Найти помощь рядом</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
