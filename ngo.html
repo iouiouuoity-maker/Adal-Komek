@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adal Komek — НПО и фонды Казахстана</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="logo" class="logo" />
+        <div><h1>Adal Komek</h1><span>Digital Trust Platform</span></div>
+      </a>
+      <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="help.html">Помочь</a>
+        <a href="teens.html">Тебя услышат</a>
+      </nav>
+      <button class="burger" id="burgerBtn">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Главная</a>
+      <a href="help.html">Помочь</a>
+      <a href="teens.html">Тебя услышат</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-hero orange-bg">
+      <div class="container">
+        <p class="eyebrow">Навигатор помощи</p>
+        <h2>НПО и фонды Казахстана</h2>
+        <p>Организации, в которые можно обратиться за помощью или для сотрудничества.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="medical">🏥 Медицинские</button>
+          <button class="filter-btn" data-filter="children">👶 Детские</button>
+          <button class="filter-btn" data-filter="social">🏠 Социальные</button>
+          <button class="filter-btn" data-filter="education">🎓 Образовательные</button>
+        </div>
+
+        <div class="ngo-grid">
+          <div class="ngo-card" data-category="social">
+            <h4>Красный Полумесяц Казахстана</h4>
+            <p><strong>Направление:</strong> гуманитарная и социальная помощь</p>
+            <p><strong>Контакты:</strong> официальный сайт / контакты фонда</p>
+            <div class="card-actions">
+              <a href="#" class="btn btn-primary small">Перейти</a>
+              <a href="#" class="btn btn-secondary small">Связаться</a>
+            </div>
+          </div>
+
+          <div class="ngo-card" data-category="medical">
+            <h4>Қазақстан халқына</h4>
+            <p><strong>Направление:</strong> лечение, поддержка, образование</p>
+            <p><strong>Контакты:</strong> официальный сайт / программы помощи</p>
+            <div class="card-actions">
+              <a href="#" class="btn btn-primary small">Перейти</a>
+              <a href="#" class="btn btn-secondary small">Связаться</a>
+            </div>
+          </div>
+
+          <div class="ngo-card" data-category="children">
+            <h4>Фонд “Аяла”</h4>
+            <p><strong>Направление:</strong> помощь детям</p>
+            <p><strong>Контакты:</strong> официальный сайт / проекты</p>
+            <div class="card-actions">
+              <a href="#" class="btn btn-primary small">Перейти</a>
+              <a href="#" class="btn btn-secondary small">Связаться</a>
+            </div>
+          </div>
+
+          <div class="ngo-card" data-category="education">
+            <h4>Фонд “Дара”</h4>
+            <p><strong>Направление:</strong> образование и развитие детей</p>
+            <p><strong>Контакты:</strong> официальный сайт / проекты</p>
+            <div class="card-actions">
+              <a href="#" class="btn btn-primary small">Перейти</a>
+              <a href="#" class="btn btn-secondary small">Связаться</a>
+            </div>
+          </div>
+
+          <div class="ngo-card" data-category="social">
+            <h4>Добровольное общество “Милосердие”</h4>
+            <p><strong>Направление:</strong> помощь детям и семьям</p>
+            <p><strong>Контакты:</strong> официальный сайт / обращения</p>
+            <div class="card-actions">
+              <a href="#" class="btn btn-primary small">Перейти</a>
+              <a href="#" class="btn btn-secondary small">Связаться</a>
+            </div>
+          </div>
+
+          <div class="ngo-card" data-category="education">
+            <h4>Фонд “Болашақ”</h4>
+            <p><strong>Направление:</strong> социальные и образовательные проекты</p>
+            <p><strong>Контакты:</strong> официальный сайт / программы</p>
+            <div class="card-actions">
+              <a href="#" class="btn btn-primary small">Перейти</a>
+              <a href="#" class="btn btn-secondary small">Связаться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
