@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adal Komek — Волонтёры и спонсоры</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="logo" class="logo" />
+        <div><h1>Adal Komek</h1><span>Digital Trust Platform</span></div>
+      </a>
+      <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="help.html">Сборы</a>
+        <a href="ngo.html">НПО</a>
+      </nav>
+      <button class="burger" id="burgerBtn">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Главная</a>
+      <a href="help.html">Сборы</a>
+      <a href="ngo.html">НПО</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-hero violet-bg">
+      <div class="container">
+        <p class="eyebrow">Сообщество помощи</p>
+        <h2>Волонтёры и спонсоры</h2>
+        <p>Выберите формат участия и станьте частью реальной помощи.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container three-col">
+        <div class="panel">
+          <h3>Стать волонтёром</h3>
+          <form class="form-grid">
+            <input type="text" placeholder="Имя" />
+            <input type="text" placeholder="Город" />
+            <select>
+              <option>Чем можете помочь</option>
+              <option>Доставка</option>
+              <option>Помощь пожилым</option>
+              <option>Сбор вещей</option>
+              <option>IT / медиа</option>
+            </select>
+            <button type="button" class="btn btn-primary">Отправить</button>
+          </form>
+        </div>
+
+        <div class="panel">
+          <h3>Стать спонсором</h3>
+          <form class="form-grid">
+            <select>
+              <option>Формат поддержки</option>
+              <option>Разовая помощь</option>
+              <option>Регулярная поддержка</option>
+            </select>
+            <select>
+              <option>Категория</option>
+              <option>Медицинская</option>
+              <option>Детская</option>
+              <option>Социальная</option>
+              <option>Образовательная</option>
+            </select>
+            <button type="button" class="btn btn-secondary">Поддержать</button>
+          </form>
+        </div>
+
+        <div class="panel">
+          <h3>Система предложит задания</h3>
+          <p>После регистрации волонтёру будут доступны подходящие задания по навыкам и городу.</p>
+          <div class="mini-note">Например: доставка лекарств, покупка продуктов, помощь ребёнку, сбор вещей.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-bg">
+      <div class="container">
+        <div class="section-head">
+          <h3>Волонтёрские задания</h3>
+          <p>Актуальные задачи для выполнения</p>
+        </div>
+
+        <div class="card-grid">
+          <div class="feature-card no-link">
+            <div class="icon">🟢</div>
+            <h4>Купить продукты пенсионеру</h4>
+            <p>Статус: доступно</p>
+          </div>
+          <div class="feature-card no-link">
+            <div class="icon">🔵</div>
+            <h4>Отвезти лекарства</h4>
+            <p>Статус: выполняется</p>
+          </div>
+          <div class="feature-card no-link">
+            <div class="icon">✅</div>
+            <h4>Помочь ребёнку со сборами в школу</h4>
+            <p>Статус: выполнено</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
