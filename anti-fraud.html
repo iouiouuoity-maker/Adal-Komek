@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adal Komek — Анти-мошенничество</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="logo" class="logo" />
+        <div><h1>Adal Komek</h1><span>Digital Trust Platform</span></div>
+      </a>
+      <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="help.html">Помочь</a>
+        <a href="ngo.html">НПО</a>
+        <a href="teens.html">Тебя услышат</a>
+      </nav>
+      <button class="burger" id="burgerBtn">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Главная</a>
+      <a href="help.html">Помочь</a>
+      <a href="ngo.html">НПО</a>
+      <a href="teens.html">Тебя услышат</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-hero anti-bg">
+      <div class="container">
+        <p class="eyebrow">Безопасность и доверие</p>
+        <h2>Проверка благотворительных сборов</h2>
+        <p>Проверьте ссылку или текст сбора, чтобы получить предварительную AI-оценку риска.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <div class="panel">
+          <h3>Проверить сбор</h3>
+          <textarea id="fraudInput" rows="8" placeholder="Вставьте текст объявления, ссылку на сбор или описание ситуации..."></textarea>
+          <button class="btn btn-primary" id="analyzeBtn">AI-анализ</button>
+
+          <div id="fraudResult" class="result-box hidden">
+            <h4>Результат проверки</h4>
+            <p id="fraudStatusText"></p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Пожаловаться</h3>
+          <form class="form-grid">
+            <input type="text" placeholder="Ссылка на подозрительный сбор" />
+            <input type="text" placeholder="Ваш контакт (необязательно)" />
+            <textarea rows="5" placeholder="Опишите, что именно кажется подозрительным"></textarea>
+            <button type="button" class="btn btn-secondary">Отправить жалобу</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-bg">
+      <div class="container">
+        <div class="section-head">
+          <h3>База мошеннических схем</h3>
+          <p>Система отслеживает типичные шаблоны мошенничества</p>
+        </div>
+
+        <div class="card-grid">
+          <div class="feature-card no-link">
+            <div class="icon">⚠️</div>
+            <h4>«Срочно нужна операция, нет документов»</h4>
+            <p>Эмоциональное давление и отсутствие подтверждающих данных.</p>
+          </div>
+          <div class="feature-card no-link">
+            <div class="icon">💳</div>
+            <h4>«Перевод только на карту»</h4>
+            <p>Нет фонда, реквизитов, отчётности и прозрачности платежей.</p>
+          </div>
+          <div class="feature-card no-link">
+            <div class="icon">🖼</div>
+            <h4>Повторяющиеся фото и тексты</h4>
+            <p>Одинаковые изображения и шаблонные истории в разных публикациях.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h3>Куда обратиться</h3>
+          <p>Если вы столкнулись с мошенничеством</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h4>Министерство внутренних дел РК</h4>
+            <p>Официальное обращение по фактам мошенничества и противоправных действий.</p>
+            <a href="#" class="btn btn-primary small">Сообщить</a>
+          </div>
+          <div class="contact-card">
+            <h4>Киберполиция Казахстана</h4>
+            <p>Обращение по интернет-мошенничеству и подозрительным цифровым схемам.</p>
+            <a href="#" class="btn btn-secondary small">Сообщить</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
